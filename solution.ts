@@ -1,4 +1,3 @@
-// Problem 1
 function formatValue(
   value: string | number | boolean
 ): string | number | boolean {
@@ -11,7 +10,6 @@ function formatValue(
   return !value;
 }
 
-// Problem 2
 function getLength(value: string | any[]): number {
   if (typeof value === "string") {
     return value.length;
@@ -21,7 +19,6 @@ function getLength(value: string | any[]): number {
   return 0;
 }
 
-// Problem 3
 class Person {
   name: string;
   age: number;
@@ -36,7 +33,6 @@ class Person {
   }
 }
 
-// Problem 4
 interface RatedItem {
   title: string;
   rating: number;
@@ -46,7 +42,6 @@ function filterByRating(items: RatedItem[]): RatedItem[] {
   return items.filter((item) => item.rating >= 4);
 }
 
-// Problem 5
 interface User {
   id: number;
   name: string;
@@ -58,7 +53,6 @@ function filterActiveUsers(users: User[]): User[] {
   return users.filter((user) => user.isActive);
 }
 
-// Problem 6
 interface Book {
   title: string;
   author: string;
@@ -73,7 +67,6 @@ function printBookDetails(book: Book): void {
   );
 }
 
-// Problem 7
 function getUniqueValues(
   arr1: (string | number)[],
   arr2: (string | number)[]
@@ -88,7 +81,6 @@ function getUniqueValues(
   return result;
 }
 
-// Problem 8
 interface Product {
   name: string;
   price: number;
